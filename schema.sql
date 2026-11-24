@@ -1,0 +1,12 @@
+PRAGMA foreign_keys=ON;
+CREATE TABLE events(event_id TEXT PRIMARY KEY,title TEXT,event_date TEXT,department TEXT,location TEXT,analysis_level INTEGER,status TEXT,created_at TEXT,created_by TEXT);
+CREATE TABLE questions(question_id TEXT PRIMARY KEY,stage_id TEXT,question_en TEXT,question_ar TEXT,answer_type TEXT,min_level INTEGER,is_required INTEGER,trigger_rule TEXT,version INTEGER,active INTEGER);
+CREATE TABLE options(option_id TEXT PRIMARY KEY,question_id TEXT,option_code TEXT,label_en TEXT,label_ar TEXT,active INTEGER,version INTEGER,FOREIGN KEY(question_id) REFERENCES questions(question_id));
+CREATE TABLE answers(answer_id TEXT PRIMARY KEY,event_id TEXT,question_id TEXT,answer_json TEXT,evidence_ref TEXT,analyst_rationale TEXT,question_version INTEGER,FOREIGN KEY(event_id) REFERENCES events(event_id));
+CREATE TABLE cause_links(link_id TEXT PRIMARY KEY,event_id TEXT,from_cause_id TEXT,to_cause_id TEXT,relationship TEXT,evidence_ref TEXT);
+CREATE TABLE barriers(barrier_id TEXT PRIMARY KEY,event_id TEXT,barrier_type TEXT,status TEXT,failure_mode TEXT,evidence_ref TEXT);
+CREATE TABLE actions(action_id TEXT PRIMARY KEY,event_id TEXT,action_type TEXT,description TEXT,owner TEXT,due_date TEXT,status TEXT,priority TEXT);
+CREATE TABLE verifications(verification_id TEXT PRIMARY KEY,action_id TEXT,result TEXT,verified_by TEXT,verified_at TEXT,evidence_ref TEXT);
+CREATE TABLE approvals(approval_id TEXT PRIMARY KEY,event_id TEXT,stage TEXT,approver TEXT,decision TEXT,decision_at TEXT,comments TEXT);
+CREATE TABLE library_proposals(proposal_id TEXT PRIMARY KEY,category TEXT,code TEXT,label_en TEXT,label_ar TEXT,status TEXT,submitted_by TEXT,reviewed_by TEXT,created_at TEXT);
+CREATE TABLE audit_trail(audit_id INTEGER PRIMARY KEY AUTOINCREMENT,event_id TEXT,actor TEXT,action TEXT,details TEXT,timestamp TEXT);

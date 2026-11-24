@@ -1,0 +1,1640 @@
+{
+  "questions": [
+    {
+      "id": "Q01",
+      "stage": "01 Event Registration",
+      "en": "What type of event is being analyzed?",
+      "ar": "ما نوع الحالة محل التحليل؟",
+      "type": "single",
+      "level": 1,
+      "required": true,
+      "trigger": "",
+      "options": [
+        [
+          "OBS",
+          "Safety Observation",
+          "ملاحظة سلامة"
+        ],
+        [
+          "UA",
+          "Unsafe Act",
+          "فعل غير آمن"
+        ],
+        [
+          "UC",
+          "Unsafe Condition",
+          "حالة غير آمنة"
+        ],
+        [
+          "NM",
+          "Near Miss",
+          "شبه حادث"
+        ],
+        [
+          "INC",
+          "Incident / Accident",
+          "حادث"
+        ],
+        [
+          "LOPC",
+          "Loss of Primary Containment",
+          "فقدان الاحتواء الأساسي"
+        ],
+        [
+          "PSE",
+          "Process Safety Event",
+          "حدث سلامة عمليات"
+        ],
+        [
+          "ENV",
+          "Environmental Incident",
+          "حادث بيئي"
+        ],
+        [
+          "PD",
+          "Property Damage",
+          "تلف ممتلكات"
+        ]
+      ]
+    },
+    {
+      "id": "Q02",
+      "stage": "01 Event Registration",
+      "en": "Which department is involved?",
+      "ar": "ما الإدارة المعنية؟",
+      "type": "multi",
+      "level": 1,
+      "required": true,
+      "trigger": "",
+      "options": [
+        [
+          "PROD",
+          "Production",
+          "الإنتاج"
+        ],
+        [
+          "MAINT",
+          "Maintenance",
+          "الصيانة"
+        ],
+        [
+          "UTIL",
+          "Utilities",
+          "المرافق"
+        ],
+        [
+          "OFF",
+          "Offsite",
+          "الأوف سايت"
+        ],
+        [
+          "HSE",
+          "HSE",
+          "السلامة والصحة المهنية"
+        ],
+        [
+          "ADMIN",
+          "Administration",
+          "الإدارة"
+        ],
+        [
+          "CON",
+          "Contractor",
+          "مقاول"
+        ],
+        [
+          "SEC",
+          "Security",
+          "الأمن"
+        ],
+        [
+          "WH",
+          "Warehouse / Stores",
+          "المخازن"
+        ]
+      ]
+    },
+    {
+      "id": "Q03",
+      "stage": "01 Event Registration",
+      "en": "Where did the event occur?",
+      "ar": "أين وقعت الحالة؟",
+      "type": "multi",
+      "level": 1,
+      "required": true,
+      "trigger": "",
+      "options": [
+        [
+          "PDH",
+          "PDH Unit",
+          "وحدة PDH"
+        ],
+        [
+          "PP",
+          "PP Unit",
+          "وحدة PP"
+        ],
+        [
+          "UTIL",
+          "Utilities Area",
+          "منطقة المرافق"
+        ],
+        [
+          "TANK",
+          "Tank Farm",
+          "منطقة الخزانات"
+        ],
+        [
+          "LOAD",
+          "Loading Area",
+          "منطقة التحميل"
+        ],
+        [
+          "WH",
+          "Warehouse",
+          "المخزن"
+        ],
+        [
+          "WORK",
+          "Workshop",
+          "الورشة"
+        ],
+        [
+          "LAB",
+          "Laboratory",
+          "المعمل"
+        ],
+        [
+          "SUB",
+          "Substation",
+          "محطة كهرباء"
+        ],
+        [
+          "ADMIN",
+          "Administration Building",
+          "المبنى الإداري"
+        ],
+        [
+          "OTHER",
+          "Other",
+          "أخرى"
+        ]
+      ]
+    },
+    {
+      "id": "Q04",
+      "stage": "01 Event Registration",
+      "en": "Which activity was being performed?",
+      "ar": "ما النشاط الذي كان يتم تنفيذه؟",
+      "type": "multi",
+      "level": 1,
+      "required": true,
+      "trigger": "",
+      "options": [
+        [
+          "ROUT",
+          "Routine Operation",
+          "تشغيل اعتيادي"
+        ],
+        [
+          "NROUT",
+          "Non-Routine Operation",
+          "تشغيل غير اعتيادي"
+        ],
+        [
+          "MAINT",
+          "Maintenance",
+          "صيانة"
+        ],
+        [
+          "HOT",
+          "Hot Work",
+          "أعمال ساخنة"
+        ],
+        [
+          "CS",
+          "Confined Space",
+          "أماكن مغلقة"
+        ],
+        [
+          "LIFT",
+          "Lifting Operation",
+          "أعمال رفع"
+        ],
+        [
+          "ELEC",
+          "Electrical Work",
+          "أعمال كهربائية"
+        ],
+        [
+          "SCAF",
+          "Scaffolding",
+          "سقالات"
+        ],
+        [
+          "LOAD",
+          "Loading / Unloading",
+          "تحميل / تفريغ"
+        ],
+        [
+          "SIMOPS",
+          "SIMOPS",
+          "عمليات متزامنة"
+        ],
+        [
+          "SHUT",
+          "Shutdown / Startup",
+          "إيقاف / بدء تشغيل"
+        ],
+        [
+          "OTHER",
+          "Other",
+          "أخرى"
+        ]
+      ]
+    },
+    {
+      "id": "Q05",
+      "stage": "01 Event Registration",
+      "en": "What was the actual outcome?",
+      "ar": "ما النتيجة الفعلية؟",
+      "type": "multi",
+      "level": 1,
+      "required": true,
+      "trigger": "",
+      "options": [
+        [
+          "NONE",
+          "No injury or damage",
+          "لا توجد إصابة أو تلف"
+        ],
+        [
+          "FA",
+          "First Aid",
+          "إسعافات أولية"
+        ],
+        [
+          "MTC",
+          "Medical Treatment",
+          "علاج طبي"
+        ],
+        [
+          "LTI",
+          "Lost Time Injury",
+          "إصابة أدت لفقد وقت عمل"
+        ],
+        [
+          "PD",
+          "Property Damage",
+          "تلف ممتلكات"
+        ],
+        [
+          "LEAK",
+          "Leak / Release",
+          "تسرب / انبعاث"
+        ],
+        [
+          "FIRE",
+          "Fire / Explosion",
+          "حريق / انفجار"
+        ],
+        [
+          "ENV",
+          "Environmental Impact",
+          "تأثير بيئي"
+        ],
+        [
+          "PROD",
+          "Production Disruption",
+          "تعطل الإنتاج"
+        ]
+      ]
+    },
+    {
+      "id": "Q06",
+      "stage": "01 Event Registration",
+      "en": "What was the potential consequence?",
+      "ar": "ما العواقب المحتملة؟",
+      "type": "single",
+      "level": 1,
+      "required": true,
+      "trigger": "",
+      "options": [
+        [
+          "MIN",
+          "Minor",
+          "طفيفة"
+        ],
+        [
+          "MOD",
+          "Moderate",
+          "متوسطة"
+        ],
+        [
+          "SER",
+          "Serious",
+          "جسيمة"
+        ],
+        [
+          "MAJ",
+          "Major",
+          "كبيرة"
+        ],
+        [
+          "CAT",
+          "Catastrophic",
+          "كارثية"
+        ],
+        [
+          "UNK",
+          "Unknown / To be assessed",
+          "غير معروف / يحتاج تقييم"
+        ]
+      ]
+    },
+    {
+      "id": "Q07",
+      "stage": "02 Immediate Cause",
+      "en": "What directly triggered or characterized the event?",
+      "ar": "ما السبب المباشر أو الحالة التي ارتبطت بالحدث؟",
+      "type": "multi",
+      "level": 1,
+      "required": true,
+      "trigger": "",
+      "options": [
+        [
+          "UA",
+          "Unsafe Act",
+          "فعل غير آمن"
+        ],
+        [
+          "UC",
+          "Unsafe Condition",
+          "حالة غير آمنة"
+        ],
+        [
+          "EQ",
+          "Equipment / Component Failure",
+          "فشل معدة / مكوّن"
+        ],
+        [
+          "PROC",
+          "Process Deviation",
+          "انحراف في العملية"
+        ],
+        [
+          "MAT",
+          "Material Failure",
+          "فشل مادة"
+        ],
+        [
+          "ENV",
+          "Environmental Condition",
+          "ظروف بيئية"
+        ],
+        [
+          "EXPO",
+          "Hazardous Exposure",
+          "تعرض لخطر"
+        ],
+        [
+          "CTRL",
+          "Loss of Control",
+          "فقدان السيطرة"
+        ],
+        [
+          "OTHER",
+          "Other",
+          "أخرى"
+        ]
+      ]
+    },
+    {
+      "id": "Q08",
+      "stage": "02 Immediate Cause",
+      "en": "Was an unsafe act involved?",
+      "ar": "هل ارتبطت الحالة بفعل غير آمن؟",
+      "type": "single",
+      "level": 1,
+      "required": true,
+      "trigger": "",
+      "options": [
+        [
+          "Y",
+          "Yes",
+          "نعم"
+        ],
+        [
+          "N",
+          "No",
+          "لا"
+        ],
+        [
+          "U",
+          "Unknown",
+          "غير معروف"
+        ]
+      ]
+    },
+    {
+      "id": "Q09",
+      "stage": "02 Immediate Cause",
+      "en": "Which unsafe act(s) were identified?",
+      "ar": "ما الأفعال غير الآمنة التي تم تحديدها؟",
+      "type": "multi",
+      "level": 1,
+      "required": false,
+      "trigger": "Q08=Y",
+      "options": [
+        [
+          "PROC",
+          "Failure to follow procedure",
+          "عدم اتباع الإجراء"
+        ],
+        [
+          "AUTH",
+          "Unauthorized operation",
+          "تشغيل دون تصريح"
+        ],
+        [
+          "TOOL",
+          "Improper tool use",
+          "استخدام غير سليم للأدوات"
+        ],
+        [
+          "PPE",
+          "Failure to use PPE",
+          "عدم استخدام معدات الوقاية"
+        ],
+        [
+          "BYP",
+          "Bypassing safety device",
+          "تجاوز وسيلة حماية"
+        ],
+        [
+          "POS",
+          "Unsafe positioning",
+          "اتخاذ وضعية غير آمنة"
+        ],
+        [
+          "ISO",
+          "Failure to verify isolation",
+          "عدم التحقق من العزل"
+        ],
+        [
+          "MAN",
+          "Improper manual handling",
+          "تداول يدوي غير سليم"
+        ],
+        [
+          "DIST",
+          "Distraction",
+          "تشتت الانتباه"
+        ],
+        [
+          "OTHER",
+          "Other",
+          "أخرى"
+        ]
+      ]
+    },
+    {
+      "id": "Q10",
+      "stage": "02 Immediate Cause",
+      "en": "Was an unsafe physical condition involved?",
+      "ar": "هل ارتبطت الحالة بظرف مادي غير آمن؟",
+      "type": "single",
+      "level": 1,
+      "required": true,
+      "trigger": "",
+      "options": [
+        [
+          "Y",
+          "Yes",
+          "نعم"
+        ],
+        [
+          "N",
+          "No",
+          "لا"
+        ],
+        [
+          "U",
+          "Unknown",
+          "غير معروف"
+        ]
+      ]
+    },
+    {
+      "id": "Q11",
+      "stage": "02 Immediate Cause",
+      "en": "Which unsafe condition(s) were identified?",
+      "ar": "ما الظروف غير الآمنة التي تم تحديدها؟",
+      "type": "multi",
+      "level": 1,
+      "required": false,
+      "trigger": "Q10=Y",
+      "options": [
+        [
+          "LEAK",
+          "Gas / chemical leak",
+          "تسرب غاز / مادة كيميائية"
+        ],
+        [
+          "HOUSE",
+          "Poor housekeeping",
+          "سوء النظافة والترتيب"
+        ],
+        [
+          "GUARD",
+          "Inadequate guarding",
+          "قصور الحواجز الواقية"
+        ],
+        [
+          "DEF",
+          "Defective equipment",
+          "معدات معيبة"
+        ],
+        [
+          "LIGHT",
+          "Poor lighting",
+          "إضاءة غير كافية"
+        ],
+        [
+          "SLIP",
+          "Slippery surface",
+          "سطح زلق"
+        ],
+        [
+          "ACCESS",
+          "Inadequate access / egress",
+          "قصور مسارات الوصول / الخروج"
+        ],
+        [
+          "VENT",
+          "Inadequate ventilation",
+          "تهوية غير كافية"
+        ],
+        [
+          "NOISE",
+          "Excessive noise",
+          "ضوضاء مفرطة"
+        ],
+        [
+          "OTHER",
+          "Other",
+          "أخرى"
+        ]
+      ]
+    },
+    {
+      "id": "Q12",
+      "stage": "02 Immediate Cause",
+      "en": "Was equipment or component failure involved?",
+      "ar": "هل حدث فشل في معدة أو أحد مكوناتها؟",
+      "type": "single",
+      "level": 1,
+      "required": true,
+      "trigger": "",
+      "options": [
+        [
+          "Y",
+          "Yes",
+          "نعم"
+        ],
+        [
+          "N",
+          "No",
+          "لا"
+        ],
+        [
+          "U",
+          "Unknown",
+          "غير معروف"
+        ]
+      ]
+    },
+    {
+      "id": "Q13",
+      "stage": "02 Immediate Cause",
+      "en": "What type of failure occurred?",
+      "ar": "ما نوع الفشل الذي حدث؟",
+      "type": "multi",
+      "level": 1,
+      "required": false,
+      "trigger": "Q12=Y",
+      "options": [
+        [
+          "MECH",
+          "Mechanical failure",
+          "فشل ميكانيكي"
+        ],
+        [
+          "ELEC",
+          "Electrical failure",
+          "فشل كهربائي"
+        ],
+        [
+          "INST",
+          "Instrumentation failure",
+          "فشل أجهزة القياس"
+        ],
+        [
+          "CTRL",
+          "Control system failure",
+          "فشل نظام التحكم"
+        ],
+        [
+          "SEAL",
+          "Seal / gasket failure",
+          "فشل مانع تسرب / جوان"
+        ],
+        [
+          "CORR",
+          "Corrosion / erosion",
+          "تآكل / نحر"
+        ],
+        [
+          "STRUCT",
+          "Structural failure",
+          "فشل إنشائي"
+        ],
+        [
+          "MAT",
+          "Material degradation",
+          "تدهور الخامة"
+        ],
+        [
+          "OTHER",
+          "Other",
+          "أخرى"
+        ]
+      ]
+    },
+    {
+      "id": "Q14",
+      "stage": "03 Contributing Factors",
+      "en": "Which human performance factors contributed?",
+      "ar": "ما عوامل الأداء البشري التي ساهمت؟",
+      "type": "multi",
+      "level": 2,
+      "required": false,
+      "trigger": "",
+      "options": [
+        [
+          "COMP",
+          "Competency / skill gap",
+          "فجوة في الكفاءة / المهارة"
+        ],
+        [
+          "TRAIN",
+          "Inadequate training",
+          "قصور التدريب"
+        ],
+        [
+          "FAT",
+          "Fatigue",
+          "الإرهاق"
+        ],
+        [
+          "LOAD",
+          "Workload / time pressure",
+          "عبء العمل / ضغط الوقت"
+        ],
+        [
+          "DIST",
+          "Distraction",
+          "التشتت"
+        ],
+        [
+          "COMM",
+          "Miscommunication",
+          "سوء التواصل"
+        ],
+        [
+          "HMI",
+          "Human-machine interface issue",
+          "مشكلة في التفاعل بين الإنسان والمعدة"
+        ],
+        [
+          "FIT",
+          "Physical / cognitive fit",
+          "عدم ملاءمة المتطلبات للقدرات"
+        ],
+        [
+          "NONE",
+          "None identified",
+          "لم يتم تحديد عوامل"
+        ],
+        [
+          "UNK",
+          "Unknown",
+          "غير معروف"
+        ]
+      ]
+    },
+    {
+      "id": "Q15",
+      "stage": "03 Contributing Factors",
+      "en": "Which technical factors contributed?",
+      "ar": "ما العوامل الفنية التي ساهمت؟",
+      "type": "multi",
+      "level": 2,
+      "required": false,
+      "trigger": "",
+      "options": [
+        [
+          "DES",
+          "Poor equipment / system design",
+          "قصور تصميم المعدة / النظام"
+        ],
+        [
+          "MAINT",
+          "Inadequate maintenance",
+          "قصور الصيانة"
+        ],
+        [
+          "INSP",
+          "Inadequate inspection",
+          "قصور الفحص"
+        ],
+        [
+          "MAT",
+          "Incorrect material selection",
+          "اختيار خامة غير مناسبة"
+        ],
+        [
+          "CAL",
+          "Calibration issue",
+          "مشكلة معايرة"
+        ],
+        [
+          "ENG",
+          "Inadequate engineering review",
+          "قصور المراجعة الهندسية"
+        ],
+        [
+          "SPARE",
+          "Unavailability / unsuitable spare parts",
+          "عدم توافر / عدم ملاءمة قطع الغيار"
+        ],
+        [
+          "NONE",
+          "None identified",
+          "لم يتم تحديد عوامل"
+        ],
+        [
+          "UNK",
+          "Unknown",
+          "غير معروف"
+        ]
+      ]
+    },
+    {
+      "id": "Q16",
+      "stage": "03 Contributing Factors",
+      "en": "Which work planning and control factors contributed?",
+      "ar": "ما عوامل تخطيط العمل والتحكم فيه التي ساهمت؟",
+      "type": "multi",
+      "level": 2,
+      "required": false,
+      "trigger": "",
+      "options": [
+        [
+          "PLAN",
+          "Inadequate job planning",
+          "قصور تخطيط المهمة"
+        ],
+        [
+          "RA",
+          "Inadequate risk assessment",
+          "قصور تقييم المخاطر"
+        ],
+        [
+          "PTW",
+          "Inadequate PTW control",
+          "قصور التحكم في تصاريح العمل"
+        ],
+        [
+          "SIM",
+          "SIMOPS conflict",
+          "تعارض العمليات المتزامنة"
+        ],
+        [
+          "BRIEF",
+          "Inadequate pre-job briefing",
+          "قصور اجتماع ما قبل العمل"
+        ],
+        [
+          "ISO",
+          "Inadequate isolation planning",
+          "قصور تخطيط العزل"
+        ],
+        [
+          "RES",
+          "Inadequate resources",
+          "عدم كفاية الموارد"
+        ],
+        [
+          "SCHED",
+          "Inadequate scheduling / coordination",
+          "قصور الجدولة / التنسيق"
+        ],
+        [
+          "NONE",
+          "None identified",
+          "لم يتم تحديد عوامل"
+        ],
+        [
+          "UNK",
+          "Unknown",
+          "غير معروف"
+        ]
+      ]
+    },
+    {
+      "id": "Q17",
+      "stage": "03 Contributing Factors",
+      "en": "Which organizational factors contributed?",
+      "ar": "ما العوامل التنظيمية التي ساهمت؟",
+      "type": "multi",
+      "level": 2,
+      "required": false,
+      "trigger": "",
+      "options": [
+        [
+          "RESP",
+          "Unclear roles / responsibilities",
+          "عدم وضوح الأدوار / المسؤوليات"
+        ],
+        [
+          "PROC",
+          "Inadequate procedures",
+          "قصور الإجراءات"
+        ],
+        [
+          "SUP",
+          "Inadequate management oversight",
+          "قصور الرقابة الإدارية"
+        ],
+        [
+          "CON",
+          "Inadequate contractor management",
+          "قصور إدارة المقاولين"
+        ],
+        [
+          "MOC",
+          "Inadequate management of change",
+          "قصور إدارة التغيير"
+        ],
+        [
+          "RES",
+          "Resource constraints",
+          "قيود الموارد"
+        ],
+        [
+          "COMM",
+          "Weak organizational communication",
+          "ضعف التواصل المؤسسي"
+        ],
+        [
+          "MON",
+          "Inadequate performance monitoring",
+          "قصور متابعة الأداء"
+        ],
+        [
+          "NONE",
+          "None identified",
+          "لم يتم تحديد عوامل"
+        ],
+        [
+          "UNK",
+          "Unknown",
+          "غير معروف"
+        ]
+      ]
+    },
+    {
+      "id": "Q18",
+      "stage": "04 Barrier Analysis",
+      "en": "Which barriers were expected to prevent or mitigate the event?",
+      "ar": "ما الحواجز التي كان من المفترض أن تمنع الحدث أو تحد من عواقبه؟",
+      "type": "multi",
+      "level": 2,
+      "required": false,
+      "trigger": "",
+      "options": [
+        [
+          "ENG",
+          "Engineering controls",
+          "ضوابط هندسية"
+        ],
+        [
+          "MECH",
+          "Mechanical protection / guarding",
+          "حماية ميكانيكية / حواجز"
+        ],
+        [
+          "SIS",
+          "Safety interlocks / trips",
+          "أنظمة التعشيق / الفصل الوقائي"
+        ],
+        [
+          "GAS",
+          "Gas detection",
+          "كشف الغاز"
+        ],
+        [
+          "ALM",
+          "Alarm systems",
+          "أنظمة الإنذار"
+        ],
+        [
+          "PROC",
+          "Operating procedures",
+          "إجراءات التشغيل"
+        ],
+        [
+          "PTW",
+          "Permit to Work",
+          "تصاريح العمل"
+        ],
+        [
+          "LOTO",
+          "Isolation / LOTO",
+          "العزل وتأمين مصادر الطاقة"
+        ],
+        [
+          "SUP",
+          "Supervision",
+          "الإشراف"
+        ],
+        [
+          "PPE",
+          "PPE",
+          "معدات الوقاية الشخصية"
+        ],
+        [
+          "ERP",
+          "Emergency response",
+          "الاستجابة للطوارئ"
+        ],
+        [
+          "OTHER",
+          "Other",
+          "أخرى"
+        ]
+      ]
+    },
+    {
+      "id": "Q19",
+      "stage": "04 Barrier Analysis",
+      "en": "What was the status of the relevant barrier?",
+      "ar": "ما حالة الحاجز ذي الصلة؟",
+      "type": "single",
+      "level": 2,
+      "required": false,
+      "trigger": "Q18",
+      "options": [
+        [
+          "EFF",
+          "Available and effective",
+          "موجود وفعال"
+        ],
+        [
+          "INEFF",
+          "Available but ineffective",
+          "موجود ولكنه غير فعال"
+        ],
+        [
+          "FAIL",
+          "Failed",
+          "فشل"
+        ],
+        [
+          "BYP",
+          "Bypassed",
+          "تم تجاوزه"
+        ],
+        [
+          "MISS",
+          "Missing",
+          "غير موجود"
+        ],
+        [
+          "NA",
+          "Not applicable",
+          "لا ينطبق"
+        ],
+        [
+          "UNK",
+          "Unknown",
+          "غير معروف"
+        ]
+      ]
+    },
+    {
+      "id": "Q20",
+      "stage": "04 Barrier Analysis",
+      "en": "Why did the barrier fail or become ineffective?",
+      "ar": "لماذا فشل الحاجز أو أصبح غير فعال؟",
+      "type": "multi",
+      "level": 2,
+      "required": false,
+      "trigger": "Q19=INEFF,FAIL,BYP,MISS",
+      "options": [
+        [
+          "DES",
+          "Design deficiency",
+          "قصور التصميم"
+        ],
+        [
+          "MAINT",
+          "Poor maintenance",
+          "قصور الصيانة"
+        ],
+        [
+          "TEST",
+          "Inadequate testing",
+          "قصور الاختبار"
+        ],
+        [
+          "BYP",
+          "Unauthorized bypass",
+          "تجاوز غير مصرح به"
+        ],
+        [
+          "SET",
+          "Incorrect setting",
+          "إعداد غير صحيح"
+        ],
+        [
+          "INSP",
+          "Inadequate inspection",
+          "قصور الفحص"
+        ],
+        [
+          "HUM",
+          "Human intervention / error",
+          "تدخل / خطأ بشري"
+        ],
+        [
+          "SYS",
+          "Management system deficiency",
+          "قصور نظام الإدارة"
+        ],
+        [
+          "UNK",
+          "Unknown",
+          "غير معروف"
+        ]
+      ]
+    },
+    {
+      "id": "Q21",
+      "stage": "05 Root Cause Analysis",
+      "en": "Which management system area is linked to the verified root cause?",
+      "ar": "ما مجال نظام الإدارة المرتبط بالسبب الجذري المثبت؟",
+      "type": "multi",
+      "level": 2,
+      "required": false,
+      "trigger": "",
+      "options": [
+        [
+          "RISK",
+          "Risk assessment and management",
+          "تقييم وإدارة المخاطر"
+        ],
+        [
+          "OPS",
+          "Operating procedures",
+          "إجراءات التشغيل"
+        ],
+        [
+          "SAFE",
+          "Safe work practices / management of work",
+          "ممارسات العمل الآمن / إدارة الأعمال"
+        ],
+        [
+          "MI",
+          "Mechanical integrity",
+          "سلامة المعدات الميكانيكية"
+        ],
+        [
+          "COMP",
+          "Training and competency",
+          "التدريب والكفاءة"
+        ],
+        [
+          "MOC",
+          "Management of change",
+          "إدارة التغيير"
+        ],
+        [
+          "CON",
+          "Contractor management",
+          "إدارة المقاولين"
+        ],
+        [
+          "ERP",
+          "Emergency management",
+          "إدارة الطوارئ"
+        ],
+        [
+          "INV",
+          "Incident investigation",
+          "التحقيق في الحوادث"
+        ],
+        [
+          "AUD",
+          "Auditing and performance monitoring",
+          "التدقيق ومتابعة الأداء"
+        ],
+        [
+          "PSI",
+          "Process safety information",
+          "معلومات سلامة العمليات"
+        ],
+        [
+          "OTHER",
+          "Other",
+          "أخرى"
+        ]
+      ]
+    },
+    {
+      "id": "Q22",
+      "stage": "05 Root Cause Analysis",
+      "en": "What fundamental deficiency allowed the event to occur?",
+      "ar": "ما القصور الأساسي الذي سمح بحدوث الحدث؟",
+      "type": "multi",
+      "level": 2,
+      "required": false,
+      "trigger": "",
+      "options": [
+        [
+          "MISS",
+          "Missing system / process",
+          "غياب نظام / آلية عمل"
+        ],
+        [
+          "INADEQ",
+          "Inadequate system / process",
+          "عدم كفاية النظام / الآلية"
+        ],
+        [
+          "IMPL",
+          "Poor implementation",
+          "ضعف التطبيق"
+        ],
+        [
+          "MON",
+          "Inadequate monitoring",
+          "قصور المتابعة"
+        ],
+        [
+          "VER",
+          "Ineffective verification",
+          "عدم فعالية التحقق"
+        ],
+        [
+          "RES",
+          "Inadequate resources",
+          "عدم كفاية الموارد"
+        ],
+        [
+          "ACC",
+          "Unclear accountability",
+          "عدم وضوح المساءلة"
+        ],
+        [
+          "REV",
+          "Ineffective management review",
+          "عدم فعالية مراجعة الإدارة"
+        ],
+        [
+          "OTHER",
+          "Other",
+          "أخرى"
+        ]
+      ]
+    },
+    {
+      "id": "Q23",
+      "stage": "05 Root Cause Analysis",
+      "en": "Is the proposed root cause supported by verified evidence?",
+      "ar": "هل السبب الجذري المقترح مدعوم بأدلة تم التحقق منها؟",
+      "type": "single",
+      "level": 2,
+      "required": true,
+      "trigger": "",
+      "options": [
+        [
+          "Y",
+          "Yes",
+          "نعم"
+        ],
+        [
+          "P",
+          "Partially",
+          "جزئياً"
+        ],
+        [
+          "N",
+          "No",
+          "لا"
+        ],
+        [
+          "F",
+          "Further investigation required",
+          "يتطلب استكمال التحقيق"
+        ]
+      ]
+    },
+    {
+      "id": "Q24",
+      "stage": "05 Root Cause Analysis",
+      "en": "Which analysis method was used?",
+      "ar": "ما أداة التحليل المستخدمة؟",
+      "type": "multi",
+      "level": 2,
+      "required": false,
+      "trigger": "",
+      "options": [
+        [
+          "5W",
+          "5 Whys",
+          "لماذا خمس مرات"
+        ],
+        [
+          "FISH",
+          "Fishbone / Ishikawa",
+          "مخطط عظمة السمكة"
+        ],
+        [
+          "TREE",
+          "Causal Tree Analysis",
+          "شجرة تحليل الأسباب"
+        ],
+        [
+          "BAR",
+          "Barrier Analysis",
+          "تحليل الحواجز"
+        ],
+        [
+          "HF",
+          "Human Factors Analysis",
+          "تحليل العوامل البشرية"
+        ],
+        [
+          "FTA",
+          "Fault Tree Analysis",
+          "تحليل شجرة الأعطال"
+        ],
+        [
+          "COMB",
+          "Combined methods",
+          "مجموعة أدوات"
+        ],
+        [
+          "OTHER",
+          "Other",
+          "أخرى"
+        ]
+      ]
+    },
+    {
+      "id": "Q25",
+      "stage": "06 Actions",
+      "en": "What type of action is required?",
+      "ar": "ما نوع الإجراء المطلوب؟",
+      "type": "multi",
+      "level": 1,
+      "required": true,
+      "trigger": "",
+      "options": [
+        [
+          "CORR",
+          "Immediate correction",
+          "تصحيح فوري"
+        ],
+        [
+          "CA",
+          "Corrective action",
+          "إجراء تصحيحي"
+        ],
+        [
+          "PA",
+          "Preventive action",
+          "إجراء وقائي"
+        ],
+        [
+          "ENG",
+          "Engineering modification",
+          "تعديل هندسي"
+        ],
+        [
+          "PROC",
+          "Procedure revision",
+          "تعديل إجراء"
+        ],
+        [
+          "TRN",
+          "Training / competency improvement",
+          "تحسين التدريب / الكفاءة"
+        ],
+        [
+          "MI",
+          "Inspection / maintenance improvement",
+          "تحسين الفحص / الصيانة"
+        ],
+        [
+          "SYS",
+          "Management system improvement",
+          "تحسين نظام الإدارة"
+        ]
+      ]
+    },
+    {
+      "id": "Q26",
+      "stage": "06 Actions",
+      "en": "What is the highest feasible level in the hierarchy of controls?",
+      "ar": "ما أعلى مستوى ممكن تطبيقه من تسلسل هرمية التحكم؟",
+      "type": "single",
+      "level": 1,
+      "required": false,
+      "trigger": "",
+      "options": [
+        [
+          "ELIM",
+          "Elimination",
+          "الإزالة"
+        ],
+        [
+          "SUB",
+          "Substitution",
+          "الاستبدال"
+        ],
+        [
+          "ENG",
+          "Engineering controls",
+          "الضوابط الهندسية"
+        ],
+        [
+          "ADM",
+          "Administrative controls",
+          "الضوابط الإدارية"
+        ],
+        [
+          "PPE",
+          "PPE",
+          "معدات الوقاية الشخصية"
+        ],
+        [
+          "NA",
+          "Not applicable",
+          "لا ينطبق"
+        ]
+      ]
+    },
+    {
+      "id": "Q27",
+      "stage": "06 Actions",
+      "en": "What is the action priority?",
+      "ar": "ما أولوية تنفيذ الإجراء؟",
+      "type": "single",
+      "level": 1,
+      "required": true,
+      "trigger": "",
+      "options": [
+        [
+          "CRIT",
+          "Critical",
+          "حرجة"
+        ],
+        [
+          "HIGH",
+          "High",
+          "عالية"
+        ],
+        [
+          "MED",
+          "Medium",
+          "متوسطة"
+        ],
+        [
+          "LOW",
+          "Low",
+          "منخفضة"
+        ]
+      ]
+    },
+    {
+      "id": "Q28",
+      "stage": "07 Effectiveness",
+      "en": "Was the action implemented?",
+      "ar": "هل تم تنفيذ الإجراء؟",
+      "type": "single",
+      "level": 1,
+      "required": true,
+      "trigger": "",
+      "options": [
+        [
+          "Y",
+          "Yes",
+          "نعم"
+        ],
+        [
+          "P",
+          "Partially",
+          "جزئياً"
+        ],
+        [
+          "N",
+          "No",
+          "لا"
+        ]
+      ]
+    },
+    {
+      "id": "Q29",
+      "stage": "07 Effectiveness",
+      "en": "Was the root cause eliminated or adequately controlled?",
+      "ar": "هل تمت إزالة السبب الجذري أو التحكم فيه بصورة كافية؟",
+      "type": "single",
+      "level": 1,
+      "required": true,
+      "trigger": "",
+      "options": [
+        [
+          "Y",
+          "Yes",
+          "نعم"
+        ],
+        [
+          "P",
+          "Partially",
+          "جزئياً"
+        ],
+        [
+          "N",
+          "No",
+          "لا"
+        ],
+        [
+          "U",
+          "Not verified",
+          "لم يتم التحقق"
+        ]
+      ]
+    },
+    {
+      "id": "Q30",
+      "stage": "07 Effectiveness",
+      "en": "Has a similar event recurred after implementation?",
+      "ar": "هل تكررت حالة مماثلة بعد تنفيذ الإجراء؟",
+      "type": "single",
+      "level": 1,
+      "required": true,
+      "trigger": "",
+      "options": [
+        [
+          "Y",
+          "Yes",
+          "نعم"
+        ],
+        [
+          "N",
+          "No",
+          "لا"
+        ],
+        [
+          "U",
+          "Unknown / insufficient observation period",
+          "غير معروف / فترة متابعة غير كافية"
+        ]
+      ]
+    },
+    {
+      "id": "Q31",
+      "stage": "08 Lessons Learned",
+      "en": "Which management documents or systems require review?",
+      "ar": "ما الوثائق أو الأنظمة التي تتطلب المراجعة؟",
+      "type": "multi",
+      "level": 2,
+      "required": false,
+      "trigger": "",
+      "options": [
+        [
+          "HIRA",
+          "HIRA / Risk Assessment",
+          "تقييم المخاطر"
+        ],
+        [
+          "PTW",
+          "Permit to Work",
+          "تصاريح العمل"
+        ],
+        [
+          "SOP",
+          "Operating procedures",
+          "إجراءات التشغيل"
+        ],
+        [
+          "MOC",
+          "Management of Change",
+          "إدارة التغيير"
+        ],
+        [
+          "MI",
+          "Mechanical integrity program",
+          "برنامج سلامة المعدات"
+        ],
+        [
+          "ERP",
+          "Emergency response plan",
+          "خطة الطوارئ"
+        ],
+        [
+          "TRAIN",
+          "Training matrix",
+          "مصفوفة التدريب"
+        ],
+        [
+          "CON",
+          "Contractor management",
+          "إدارة المقاولين"
+        ],
+        [
+          "NONE",
+          "None identified",
+          "لم يتم تحديد حاجة للمراجعة"
+        ]
+      ]
+    }
+  ],
+  "tool_prompts": [
+    {
+      "tool": "5 Whys",
+      "en": "Why did the immediate cause occur?",
+      "ar": "لماذا حدث السبب المباشر؟"
+    },
+    {
+      "tool": "5 Whys",
+      "en": "Why did that condition or action exist?",
+      "ar": "لماذا وُجدت تلك الحالة أو وقع ذلك الفعل؟"
+    },
+    {
+      "tool": "5 Whys",
+      "en": "What system or control allowed it to continue?",
+      "ar": "ما النظام أو وسيلة التحكم التي سمحت باستمرار ذلك؟"
+    },
+    {
+      "tool": "Fishbone",
+      "en": "Which cause categories were assessed?",
+      "ar": "ما فئات الأسباب التي تم تقييمها؟"
+    },
+    {
+      "tool": "Causal Tree",
+      "en": "Which events and conditions combined to produce the outcome?",
+      "ar": "ما الأحداث والظروف التي تفاعلت لإنتاج النتيجة؟"
+    },
+    {
+      "tool": "Barrier Analysis",
+      "en": "What was the intended function of each relevant barrier?",
+      "ar": "ما الوظيفة المقصودة لكل حاجز ذي صلة؟"
+    },
+    {
+      "tool": "Barrier Analysis",
+      "en": "Was the barrier absent, failed, bypassed, or ineffective?",
+      "ar": "هل كان الحاجز غائباً أو فاشلاً أو متجاوزاً أو غير فعال؟"
+    },
+    {
+      "tool": "Human Factors",
+      "en": "Were task demands, tools, environment, or organizational conditions compatible with safe performance?",
+      "ar": "هل كانت متطلبات المهمة والأدوات والبيئة والظروف التنظيمية ملائمة للأداء الآمن؟"
+    },
+    {
+      "tool": "Fault Tree Analysis",
+      "en": "What top event is being analyzed?",
+      "ar": "ما الحدث الأعلى محل التحليل؟"
+    },
+    {
+      "tool": "Fault Tree Analysis",
+      "en": "What combinations of failures or conditions could produce the top event?",
+      "ar": "ما مجموعات الأعطال أو الظروف التي يمكن أن تؤدي إلى الحدث الأعلى؟"
+    }
+  ],
+  "levels": {
+    "1": "Basic Analysis / تحليل أساسي",
+    "2": "Structured Analysis / تحليل منظم",
+    "3": "Advanced Investigation / تحقيق متقدم"
+  },
+  "principles": [
+    "Evidence-based / قائم على الأدلة",
+    "Non-blaming / غير قائم على اللوم",
+    "Risk-based / قائم على المخاطر",
+    "Barrier-focused / يركز على الحواجز",
+    "Traceable / قابل للتتبع"
+  ]
+}
